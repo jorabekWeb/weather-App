@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-gray-500 "> 
+    <div class="container flex h-screen justify-center ">
+        <div class="weatherContainer mt-28">
+            <div class="weather  px-7 py-7 rounded-2xl text-center">
+                <!-- form -->
+                <form class="justify-center flex gap-3 ">
+                    <input type="text"  placeholder="enter city name"  autocomplete="off"class="w-[250px] h-[46px] rounded-full pl-6   outline-blue-200" id="city">
+                    <button class="bg-white rounded-full p-2.5"><?xml version="1.0" ?><svg class="w-[28px] h-[28px]" data-name="Layer 3" id="Layer_3" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1,.cls-2,.cls-3{fill:none;stroke:#0832ff;stroke-linejoin:round;}.cls-1,.cls-2{stroke-linecap:round;}.cls-1,.cls-3{stroke-width:2px;}</style></defs><title/><circle class="cls-1" cx="13.5" cy="13.5" r="7.5"/><path class="cls-2" d="M8.5,13.5a5,5,0,0,1,5-5"/><rect class="cls-3" height="7.12" rx="1.33" ry="1.33" transform="translate(-9.94 24) rotate(-45)" width="2.67" x="22.67" y="20.44"/><line class="cls-2" x1="21.48" x2="18.81" y1="21.48" y2="18.81"/></svg></button>
+                    
+                </form> 
+                <!-- Loading -->
+                <div class="loading flex justify-center ">
+                    <?xml version="1.0" ?><svg class="animate-spin h-10 w-10 mt-4 hidden loadingg" fill="none" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/></svg> 
+                </div>
+
+                <!-- Error -->
+                <div class="error flex justify-center">
+                    <h2 class="text-red-500 text-xl font-medium err mt-3 hidden"></h2>
+                </div>
+
+
+                <div class="imgContainer flex justify-center ">
+                    <img   class="w-32 h-32  hidden imgContainerr" id="img" src="" alt="">
+                </div> 
+                
+                <!-- card -->
+                <div class="card  hidden"> 
+                   
+                <h1 class="text-white text-6xl font-medium my-3">30<span class="text-5xl">&deg;C</span></h1>
+                <h2 class="cityName text-white text-3xl font-normal mb-10">Bangladesh</h2>
+
+                <!-- bottom -->
+                <div class="winds flex justify-between text-white ">
+                    <div class="left items-center  flex ">
+                        <img src="/img/humidity.png" height="45" width="45" alt="" class="mr-2 i">
+                        <div class="humidity text-start">
+                            <h3 class="text-xl font-medium">30 <span>%</span></h3>
+                            <p class="text-xs  text-gray-100">huminity</p>
+                        </div>
+                    </div>
+                    <div class="right flex  items-center">
+                        <img src="/img/wind-icon.png" alt="" class="mr-2" height="45" width="45">
+                        <div class="windSpeed text-start">
+                            <h3 class="text-xl font-medium">5.66 <span>km/h</span></h3>
+                            <p class="text-xs  text-gray-100 ">Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/forecast.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
